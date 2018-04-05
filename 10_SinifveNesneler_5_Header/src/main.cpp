@@ -6,11 +6,11 @@
 // Açıklama    : Sınıflar ve Nesneler 5 - Header
 //============================================================================
 #include<iostream>
-#include"SelamSinif.h"
+#include"SelamlaSinif.h"
 using  namespace std;
 int main()
 {
-    SelamSinif selamla("Merhaba Header");
+    SelamlaSinif selamla("Merhaba Header");
     selamla.mesajiGoster();
 
     selamla.setSinifMesaji("Mesaj Değiştir");

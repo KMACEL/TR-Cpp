@@ -1,10 +1,10 @@
 #include<iostream>
 #include<string>
 
-class SelamSinif
+class SelamlaSinif
 {
 public:
-    explicit SelamSinif (std::string ilkAtama) : sinifMesaji(ilkAtama)
+    explicit SelamlaSinif (std::string ilkAtama) : sinifMesaji(ilkAtama)
     {
 
     }
