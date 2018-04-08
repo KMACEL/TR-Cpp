@@ -28,7 +28,11 @@ int main ()
         cout << "Bende For Döngüsüyüm" << endl ;
     }
 
-    
+    int karakter;
+    while((karakter=cin.get()) != EOF)
+    {
+        cout << "Karakter : " << karakter << endl ;
+    }
 
     return 0;
 }

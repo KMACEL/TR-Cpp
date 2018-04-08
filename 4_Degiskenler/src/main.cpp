@@ -33,3 +33,20 @@ int main(){
 
     return 0;
 }
+/*
+    long double x;
+    double x;
+    float x;
+    unsigned long long int x; | unsigned long long x;
+    long long int x; | long long int x;
+    unsigned long int x; | unsigned long x;
+    long int x; | long x;
+    unsigned int x;
+    int x;
+    unsigned short int x; | unsigned short;
+    short int x;
+    unsigned char;
+    char x;
+    signed char x;
+    bool x;
+*/

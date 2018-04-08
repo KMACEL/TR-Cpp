@@ -40,6 +40,7 @@ int main(){
     cout << "Bir mesaj giriniz : " ;
     getline(cin,gonderilecekMesaj);
 
+    // cin << test1 << test2 << test3 ;
     getSetTest.setMesaj(gonderilecekMesaj);
     getSetTest.mesajiGoster();
 
