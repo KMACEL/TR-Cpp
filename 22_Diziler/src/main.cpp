@@ -13,6 +13,22 @@
 
 using namespace std;
 
+void staticDizi()
+{
+    static array<int, 3> staticDizimiz;
+    for (size_t i = 0; i < staticDizimiz.size(); ++i)
+    {
+        staticDizimiz[i]+=5;
+    }
+
+    cout << "Static Array Verileri : " << endl;
+    for (size_t i = 0; i < staticDizimiz.size(); ++i)
+    {
+        cout << staticDizimiz[i] << "," ;
+    }
+    cout << "Static Array Son" << endl << endl;
+}
+
 int main ()
 {
     array<int, 2> ilkDizi;
@@ -73,5 +89,32 @@ int main ()
         cout << setw(4) << i  << setw(10) << frekans[i] << endl;
     }
 
+    cout << "-----------------------------" << endl;
+
+    staticDizi();
+    staticDizi();
+    staticDizi();
+
+    cout << "-----------------------------" << endl;
+
+    array<int, 10>  iterasyon = {26,7,98,4,12,3,65,47,95,22};
+
+    for (int iter : iterasyon )
+    {
+        cout << "iter İlk Değer: " << iter << endl;
+    }
+    cout << "---------------" << endl;
+
+    for (int &iter : iterasyon )
+    {
+        iter*=2;
+    }
+
+    for (int iter : iterasyon )
+    {
+        cout << "iter referanstan sonra : " << iter << endl;
+    }
+
+    
     return 0;
 }
