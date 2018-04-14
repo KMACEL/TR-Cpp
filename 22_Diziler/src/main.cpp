@@ -10,6 +10,10 @@
 #include<array>
 #include<cstddef>
 #include<random>
+#include<algorithm>
+#include<string>
+#include<vector>
+#include<stdexcept>
 
 using namespace std;
 
@@ -28,6 +32,41 @@ void staticDizi()
     }
     cout << "Static Array Son" << endl << endl;
 }
+
+void printArray(const array<array<int,3>,2> &gelenDizi)
+{
+    for(auto const &satir:gelenDizi)
+    {
+        for(auto const &eleman:satir)
+        {
+            cout << eleman << " - ";
+        }
+        cout << endl;
+    }
+}
+
+
+void printArray2(const array<array<int,3>,2> &gelenDizi)
+{
+    for(size_t satir=0; satir < gelenDizi.size();++satir)
+    {
+        for(size_t sutun=0; sutun<gelenDizi[satir].size();++sutun)
+        {
+            cout << satir << ". Satir " << sutun << ". Sutun Elemanı : " << gelenDizi[satir][sutun] << endl;
+        }
+    }
+}
+
+void vectorYazdir(const vector<int> &deger)
+{
+    cout << "Vektör Verileri : " << endl;
+    for(int eleman : deger)
+    {
+        cout << eleman << endl;
+    }
+    cout << "--------" << endl;
+}
+
 
 int main ()
 {
@@ -115,6 +154,94 @@ int main ()
         cout << "iter referanstan sonra : " << iter << endl;
     }
 
-    
+    cout << "-----------------------------" << endl;
+
+    const size_t diziEleman=7;
+    array<string, diziEleman> renkler={"Sarı", "Mavi", "Yeşil", "Beyaz", "Kırmızı", "Mor", "Siyah"};
+
+    cout << "Renkler : " <<endl;
+    for(string renk:renkler)
+    {
+        cout << renk << " ";
+    }
+
+    sort(renkler.begin(), renkler.end());
+    cout << "\nSıralamadan sonra Renkler : " << endl;
+    for(string renk:renkler)
+    {
+        cout << renk << " ";
+    }
+
+    cout << "\n---------------" << endl;
+
+    if (binary_search(renkler.begin(),renkler.end(),"Beyaz"))
+    {
+        cout << "Beyaz Bu Dizinin Elemanı" << endl;
+    }
+
+    cout << "-----------------------------" << endl;
+
+    const size_t rows=2;
+    const size_t columns=3;
+    array<array<int, columns>,rows> dizi1 = {1,3,7,
+                                             6,9,4};
+    printArray(dizi1);
+    printArray2(dizi1);
+
+    cout << "-----------------------------" << endl;
+
+    vector<int> sayisalVector(2);
+
+    cout << "Vektor Boyut : " << sayisalVector.size() << endl;
+    vectorYazdir(sayisalVector);
+
+    cout << "\n---------------" << endl;
+
+    sayisalVector.push_back(1);
+    sayisalVector.push_back(7);
+    sayisalVector.push_back(6);
+    sayisalVector.push_back(3);
+    cout << "Vektor Boyut : " << sayisalVector.size() << endl;
+    vectorYazdir(sayisalVector);
+
+    cout << "\n---------------" << endl;
+
+    sayisalVector.pop_back();
+    cout << "Vektor Boyut : " << sayisalVector.size() << endl;
+    vectorYazdir(sayisalVector);
+
+    cout << "\n---------------" << endl;
+
+    cout << "Son Eleman : " << sayisalVector.back() << endl;
+
+    cout << "\n---------------" << endl;
+
+    sayisalVector.insert(sayisalVector.begin()+1,68);
+    cout << "Vektor Boyut : " << sayisalVector.size() << endl;
+    vectorYazdir(sayisalVector);
+
+    cout << "\n---------------" << endl;
+
+    sayisalVector.erase(sayisalVector.begin()+0,sayisalVector.end()-2);
+    cout << "Vektor Boyut : " << sayisalVector.size() << endl;
+    vectorYazdir(sayisalVector);
+
+    cout << "\n---------------" << endl;
+
+    sayisalVector.clear();
+    cout << "Vektor Boyut : " << sayisalVector.size() << endl;
+    vectorYazdir(sayisalVector);
+
+    cout << "-----------------------------" << endl;
+
+    try
+    {
+        cout << "Ulaşabilecek miyiz acaba ? : " << sayisalVector.at(3) << endl;
+    }
+    catch (out_of_range &ex)
+    {
+        cerr << "Hata Oluştu : " << ex.what() << endl;
+    }
+
     return 0;
 }
