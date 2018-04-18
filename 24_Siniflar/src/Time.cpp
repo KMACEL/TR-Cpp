@@ -5,14 +5,18 @@
 
 using namespace std;
 
+unsigned int Time::classCount=0;
+
 Time::Time(int h, int m, int s)
 {
     setTime(h, m, s);
+    classCount++;
 }
 
 Time::~Time()
 {
     cout << "Class Bitti " << endl;
+    classCount--;
 }
 
 void Time::setTime(int h, int m, int s)
@@ -22,15 +26,16 @@ void Time::setTime(int h, int m, int s)
     setSecond(s);
 }
 
-void Time::setHour(int h)
+Time &Time::setHour(int hour)
 {
-    if(h >= 0 && h < 24)
+    if(hour >= 0 && hour < 24)
     {
-        hour=h;
+        this->hour=hour; //this
     }else
     {
         throw invalid_argument("Lütfen Saat verisini 0 ile 24 arasında değer giriniz...");
     }
+    return *this;
 }
 
 unsigned int &Time::setHourKOTU(int h)
@@ -46,7 +51,7 @@ unsigned int &Time::setHourKOTU(int h)
 }
 
 
-void Time::setMinute(int m)
+Time &Time::setMinute(int m)
 {
     if(m >= 0 && m < 60)
     {
@@ -55,9 +60,10 @@ void Time::setMinute(int m)
     {
         throw invalid_argument("Lütfen dakika verisini 0 ile 60 arasında değer giriniz...");
     }
+    return *this;
 }
 
-void Time::setSecond(int s)
+Time &Time::setSecond(int s)
 {
     if(s >= 0 && s < 60)
     {
@@ -66,6 +72,7 @@ void Time::setSecond(int s)
     {
         throw invalid_argument("Lütfen saniye verisini 0 ile 60 arasında değer giriniz...");
     }
+    return *this;
 }
 
 int Time::getHour()
@@ -92,4 +99,9 @@ void Time::printStandart() const
 {
     cout << setfill('0') << setw(2) << ((hour == 0 || hour == 12) ? 12 : hour % 12)
     << ":"  << setw(2) <<second << (hour < 12 ? " AM" : " PM") << endl;
+}
+
+unsigned int Time::getCount()
+{
+    return classCount;
 }
