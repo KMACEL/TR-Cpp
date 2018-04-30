@@ -2,7 +2,9 @@
 Bu proje, açıklamalarıyla C++ eğitimi içermektedir. Şu an konular için ön hazırlık projeleri oluşturulmuştur. Hem sınıflandırma, hem içerik hem de açıklamalar daha sonra düzenli ve eğitici bir biçimde işlenecektir.  
 
 ### Ön Planlama :
-* Proje Klasör Yapısı & MakeFile Hazırlanması ve Çalışma Ortamı Kurulumu
+* Çalışma Ortamı Kurulumu
+* Proje Klasör Yapısı
+* MakeFile Hazırlanması ve
 * Merhaba Dünya
 * Ekrana Veri Yazdırma ve Kaçış İfadeleri
 * Değişkenler
