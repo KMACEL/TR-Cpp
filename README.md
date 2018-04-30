@@ -18,7 +18,15 @@ Bu proje, açıklamalarıyla C++ eğitimi içermektedir. Şu an konular için ö
 * Nesne Tabanlı Programlamaya Giriş
 * Method Overload
 * Polimorfizm
-* Abstract
-* Name Space
-* Error Handling
+* Abstract Sınıflar
+* "namespace" Kullanımı
+* Hata Denetimi
+* Şablonlar
 * Standart Kütüphaneler
+* Dosya İşlemleri
+* Thread Kullanımı
+* Web Service
+* Veri Tabanı
+* Algoritmalar
+* Design Pattern
+* Open CV
