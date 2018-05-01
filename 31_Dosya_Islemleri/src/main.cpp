@@ -34,9 +34,46 @@ int main ()
         exit ( EXIT_FAILURE );
     }
     dosyaEkle << "Silmeden Ekledim Bak Bunu" << endl;
+    dosyaEkle << "Bunuda Ekledim" << endl;
+    dosyaEkle.close();
+    //---------------------------------------------------------------
+
+    ofstream yeniDosya;
+    yeniDosya.open("YeniDosya.txt",ios::out);
+    yeniDosya << "Yeni Açtım ve EKledim." << endl;
+    yeniDosya.close();
+    //---------------------------------------------------------------
+
+    ifstream dosyaOku("varolan.txt",ios::in);
+    if (!dosyaOku)
+    {
+        cerr << "Dosya oluşturma hatası" << endl;
+        exit ( EXIT_FAILURE );
+    }
+
+    string dosya;
+    long konum;
+    dosyaOku.seekg(3); // satır
+    while(dosyaOku >> dosya)
+    {
+        //konum=dosyaOku.tellg();
+        //cout << "Konum : " << konum << " Veri : " <<  dosya << endl;
+        cout << dosya << endl;
+    }
 
     //---------------------------------------------------------------
 
-
+    
     return 0;
 }
+
+// ios::app - Her veriyi sonuna ekler
+// ios::out - Yoksa yaratır verileri ekler, varsa dosya iini siler
+// ios::trunc - Dosyanın içeriğini siler
+// ios::ate -
+// ios::in - Dosya içerisini okumak için kullanılır
+// ios::binary
+
+// dosyaOku.seekg(5, ios::beg); - baştan 5 satırdan başla
+// dosyaOku.seekg(5, ios::cur); -
+// dosyaOku.seekg(5, ios::end);
