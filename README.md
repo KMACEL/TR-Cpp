@@ -17,7 +17,8 @@ Bu proje, açıklamalarıyla C++ eğitimi içermektedir. Şu an konular için ö
 * Pointer
 * Vector Kullanımı
 * List Kullanımı
-* Maps Kullanımı
+* Map Kullanımı
+* Set Kullanımı
 * Sınıflara Giriş
 * Sınıflar
 * Nesne Tabanlı Programlamaya Giriş
@@ -27,6 +28,8 @@ Bu proje, açıklamalarıyla C++ eğitimi içermektedir. Şu an konular için ö
 * "namespace" Kullanımı
 * Hata Denetimi
 * Şablonlar
+* Stack Kullanımı
+* Queue Kullanımı
 * Standart Kütüphaneler
 * Dosya İşlemleri
 * Thread Kullanımı

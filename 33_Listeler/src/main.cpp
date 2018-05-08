@@ -18,6 +18,8 @@ int main ()
     sayi.push_back(1);
     sayi.push_back(5);
     sayi.push_back(12);
+    sayi.push_front(2);
+
 
     list<int>::iterator it = sayi.begin();
     cout << "Sayı : " << *it << endl;

@@ -7,6 +7,7 @@
 //============================================================================
 #include<iostream>
 #include<vector>
+#include<algorithm> // sort
 using namespace std;
 
 
@@ -103,6 +104,18 @@ int main ()
 
     cout << "--------------------------------------------------------" << endl;
 
+    vector<int> vektor7;
+    vektor7.push_back(5);
+    vektor7.push_back(7);
+    vektor7.push_back(2);
+    vektor7.push_back(16);
+
+    sort(vektor7.begin(), vektor7.end());
+
+    for(vector<int>::iterator it = vektor7.begin(); it != vektor7.end(); it++)
+    {
+        cout << *it << endl;
+    }
 
     return 0;
 }
