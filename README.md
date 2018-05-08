@@ -15,6 +15,9 @@ Bu proje, açıklamalarıyla C++ eğitimi içermektedir. Şu an konular için ö
 * Fonksiyonlar
 * Diziler
 * Pointer
+* Vector Kullanımı
+* List Kullanımı
+* Maps Kullanımı
 * Sınıflara Giriş
 * Sınıflar
 * Nesne Tabanlı Programlamaya Giriş
