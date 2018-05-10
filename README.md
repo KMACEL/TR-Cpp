@@ -36,5 +36,7 @@ Bu proje, açıklamalarıyla C++ eğitimi içermektedir. Şu an konular için ö
 * Web Service
 * Veri Tabanı
 * Algoritmalar
+* Data Structures
 * Design Pattern
 * Open CV
+* BOOST
