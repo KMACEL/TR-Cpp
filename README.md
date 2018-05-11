@@ -1,7 +1,14 @@
 # Açıklama
 Bu proje, açıklamalarıyla C++ eğitimi içermektedir. Şu an konular için ön hazırlık projeleri oluşturulmuştur. Hem sınıflandırma, hem içerik hem de açıklamalar daha sonra düzenli ve eğitici bir biçimde işlenecektir.  
 
+# Durum :
+* ✔ Örnek Proje Şablonları Oluşturma (Düzey 1 İçin)
+* \-- Açıklamaları Düzenleme
+* X İleri Seviye Konuların Örnek Projelerini Oluşturma
+* X İleri Seviye Konuların Dokümantasyonunu Hazırlama
+
 ### Ön Planlama :
+* Proje Hakkında
 * Çalışma Ortamı Kurulumu
 * Proje Klasör Yapısı
 * MakeFile Hazırlanması ve
