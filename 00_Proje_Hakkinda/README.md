@@ -11,4 +11,4 @@
 
  Üzerimde emeği olan bir çok kişi bulunmaktadır. Fakat bu kişilerden, özellikle bu projede katkı sağlayan iyi insanları yazmayı borç bilirim.
 
- Öncelikle beni büyük bir özen ile yetiştiren babam Özcan, annem Fatma'ya, her durumda bana destek olan, yaptığım yapacağım bütün projelerde yanımda yer alan sevgili eşim Kübra'ya, bilhassa mesleki alan başta olmak üzere, bütün sorularıma bıkmadan cevaplayan Hakkı Yavuz Erzurumlu'ya, desteklerini esirgemeyen Mehmet Aksayan, Hüseyin Başhan ve Afşin Çelik'e sonsuz teşekkürlerimi sunarım.
+ Öncelikle beni büyük bir özen ile yetiştiren babam **Özcan**, annem **Fatma**'ya, her durumda bana destek olan, yaptığım yapacağım bütün projelerde yanımda yer alan sevgili eşim **Kübra**'ya, bilhassa mesleki alan başta olmak üzere, bütün sorularıma bıkmadan cevaplayan **Hakkı Yavuz Erzurumlu**'ya, desteklerini esirgemeyen **Mehmet Aksayan**, **Hüseyin Başhan** ve **Afşin Çelik**'e sonsuz teşekkürlerimi sunarım.
