@@ -1,5 +1,5 @@
 //============================================================================
-// İsim        : 06_Ekrana_Veri_Yazdirma
+// İsim        : 07_Ekrana_Veri_Yazdirma
 // Yazan       : Mert AceL
 // Version     : 1.0
 // Copyright   : AceL

@@ -9,14 +9,15 @@ Bu proje, açıklamalarıyla C++ eğitimi içermektedir. Şu an konular için ö
 
 ### Ön Planlama :
 * ✔ Proje Hakkında
-*   Çalışma Ortamı Kurulumu
-*   Proje Klasör Yapısı
-*   Temel Terimler
-*   MakeFile Hazırlanması
+* ✔ Çalışma Ortamı Kurulumu
+* ✔ GIT Kullanımı
+* ✔ Proje Klasör Yapısı
+* ✔ Temel Terimler
+*   Makefile Hazırlanması
 * ✔ Merhaba Dünya
 * ✔ Ekrana Veri Yazdırma
 * ✔ Kaçış İfadeleri
-*   Değişkenler
+* ✔ Değişkenler
 *   Kullanıcıdan veri alma
 *   Matematiksel İfadeler ve Atama Operatörleri
 *   Koşullu İfadeler (If - Else & Switch Case)

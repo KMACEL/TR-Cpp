@@ -1,5 +1,5 @@
 //============================================================================
-// İsim        : 08_Degiskenler
+// İsim        : 09_Degiskenler
 // Yazan       : Mert AceL
 // Version     : 1.0
 // Copyright   : AceL
@@ -7,29 +7,37 @@
 //============================================================================
 #include<iostream>
 #include<string>
+
 using namespace std;
 int main(){
-    int sayisalIfadeler = 0;
-    float ondalikIfadeler = 0.0;
-    string sozelIfadeler = "";
+    // Sayısal İfadeler
+    int sayisalIfadeler = 285;
+    cout << "Sayısal İfade : " << sayisalIfadeler << endl;
+
+
+    // Ondalıklı İfadeler
+    float ondalikIfadeler = 0.25;
+    cout << "Ondalıklı İfade : " << ondalikIfadeler << endl;
+
+
+    // Sözel İfadeler
+    string sozelIfadeler = "Merhabalar Dünya";
+    cout << "Sözel İfade : " << sozelIfadeler << endl;
+
+    // karaktersel İfadeler
     char karakterselIfadeler = 'v';
+    cout << "Karaktersel İfade : " << karakterselIfadeler << endl;
 
-    cout << "Lutfen sayısal bir ifade giriniz : " ;
-    cin >> sayisalIfadeler;
-
-    cout << "Lutfen ondalıklı bir ifade giriniz : " ;
-    cin >> ondalikIfadeler;
-
-    cout << "Lutfen sözel bir ifade giriniz : " ;
-    cin >> sozelIfadeler;
-
-    cout << "Lutfen karaktersel bir ifade giriniz : " ;
-    cin >> karakterselIfadeler;
-
-    cout << "\n\nSayısal İfaden : " << sayisalIfadeler     << endl <<
+    cout << "-------------------------------------------" << endl;
+    sayisalIfadeler= 172;
+    ondalikIfadeler=286.147;
+    sozelIfadeler = "Nasıl gidiyorr...";
+    karakterselIfadeler = 'T';
+    //Hepsi
+    cout << "\nSayısal İfaden : " << sayisalIfadeler     << endl <<
             "Ondalıklı İfadeler : " << ondalikIfadeler     << endl <<
             "Sözel İfadeler : "     << sozelIfadeler       << endl <<
-            "karaktersel İfadeler " << karakterselIfadeler << endl ;
+            "Karaktersel İfadeler " << karakterselIfadeler << endl ;
 
     return 0;
 }
