@@ -18,9 +18,9 @@ Bu proje, açıklamalarıyla C++ eğitimi içermektedir. Şu an konular için ö
 * ✔ Ekrana Veri Yazdırma
 * ✔ Kaçış İfadeleri
 * ✔ Değişkenler
-*   Kullanıcıdan veri alma
-*   Matematiksel İfadeler ve Atama Operatörleri
-*   Koşullu İfadeler (If - Else & Switch Case)
+* ✔ Kullanıcıdan veri alma
+* ✔ Matematiksel İfadeler ve Atama Operatörleri
+* ✔ Koşullu İfadeler (If - Else & Switch Case)
 *   Döngüler
 *   Fonksiyonlar
 *   Diziler

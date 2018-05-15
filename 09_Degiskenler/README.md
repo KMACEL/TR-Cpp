@@ -9,6 +9,9 @@ Tam sayısal değerler, ondalıklı değerler, karakter içeren ifadeler kısaca
 Bizim bazı temel değişken türlerimiz mevcuttur.
 
 int : Sayısal türleri kapsar.
+
 float : Ondalıklı türleri kapsar.
+
 string : Sözel ifadeleri kapsar.
+
 char : 1 karakter alır
