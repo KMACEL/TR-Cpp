@@ -1,11 +1,14 @@
 CC = g++
-CFLAGS = -O2 -Wall -pedantic
-LIBS = -lm -lnsl src/SelamlaSinif.cpp
+CFLAGS = -O2 -Wall
+LIBS = -lm
 MAIN = src/main.cpp
 OUT = test
 
-build: $(MAIN)
-	$(CC) $(CFLAGS) $(LIBS) -o $(OUT) $(MAIN)
+build: SelamlaSinif.o
+	$(CC) $(CFLAGS) $(LIBS) -o $(OUT) $(MAIN) SelamlaSinif.o
+
+SelamlaSinif.o: src/SelamlaSinif.cpp
+	$(CC) $(CFLAGS) -c src/SelamlaSinif.cpp
 
 run:
 	./$(OUT)

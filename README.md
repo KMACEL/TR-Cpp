@@ -13,7 +13,7 @@ Bu proje, açıklamalarıyla C++ eğitimi içermektedir. Şu an konular için ö
 * ✔ GIT Kullanımı
 * ✔ Proje Klasör Yapısı
 * ✔ Temel Terimler
-*   Makefile Hazırlanması
+* ✔ Makefile Hazırlanması
 * ✔ Merhaba Dünya
 * ✔ Ekrana Veri Yazdırma
 * ✔ Kaçış İfadeleri

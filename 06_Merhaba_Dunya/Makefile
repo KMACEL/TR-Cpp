@@ -1,9 +1,8 @@
 CC = g++
-CFLAGS = -O2 -Wall -pedantic
-LIBS = -lm -lnsl
+CFLAGS = -O2 -Wall
 
-test: src/main.cpp
-	$(CC) $(CFLAGS) $(LIBS) -o test src/main.cpp
+build:
+	$(CC) $(CFLAGS) -o test src/main.cpp
 
 run:
 	./test

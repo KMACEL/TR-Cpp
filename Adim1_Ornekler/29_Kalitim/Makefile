@@ -1,11 +1,22 @@
 CC = g++
-CFLAGS = -O2 -Wall -pedantic
-LIBS = -lm -lnsl src/calisan.cpp src/muhendis.cpp
+CFLAGS = -O2 -Wall -std=c++11
+LIBS = -lm src/lib/*
+INCLUDES = -Isrc/include
 MAIN = src/main.cpp
 OUT = test
+CLIBS = src/lib
+CINCLUDE = src/include
 
-build: $(MAIN)
-	$(CC) $(CFLAGS) $(LIBS) -o $(OUT) $(MAIN)
+
+build: is
+	$(CC) $(CFLAGS) $(LIBS) $(INCLUDES) -o $(OUT) $(MAIN)
+
+is: $(CINCLUDE)/*.cpp #src/include/muhendis.cpp src/include/calisan.cpp
+	@if [ ! -d "$(CLIBS)" ]; then \
+		mkdir $(CLIBS); \
+	fi
+	$(CC) $(CFLAGS) -c $^
+	mv *.o $(CLIBS)
 
 run:
 	./$(OUT)
