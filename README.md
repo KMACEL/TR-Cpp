@@ -21,10 +21,10 @@ Bu proje, açıklamalarıyla C++ eğitimi içermektedir. Şu an konular için ö
 * ✔ Kullanıcıdan veri alma
 * ✔ Matematiksel İfadeler ve Atama Operatörleri
 * ✔ Koşullu İfadeler (If - Else & Switch Case)
-*   Döngüler
-*   Fonksiyonlar
+* ✔ Döngüler
+* ✔ Fonksiyonlar
 *   Diziler
-*   Pointer
+*   Pointer_Kullanımı
 *   Vector Kullanımı
 *   List Kullanımı
 *   Map Kullanımı
