@@ -29,17 +29,12 @@ Bu proje, açıklamalarıyla C++ eğitimi içermektedir. Şu an konular için ö
 *   List Kullanımı
 *   Map Kullanımı
 *   Set Kullanımı
-*   Sınıflara Giriş
-*   Sınıflar
-*   Nesne Tabanlı Programlamaya Giriş
-*   Method Overload
-*   Polimorfizm
-*   Abstract Sınıflar
+*   Nesne Tabanlı Programlama
+*   Stack Kullanımı
+*   Queue Kullanımı
 *   "namespace" Kullanımı
 *   Hata Denetimi
 *   Şablonlar
-*   Stack Kullanımı
-*   Queue Kullanımı
 *   Standart Kütüphaneler
 *   Dosya İşlemleri
 *   Thread Kullanımı
