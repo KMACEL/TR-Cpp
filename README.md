@@ -46,3 +46,12 @@ Bu proje, açıklamalarıyla C++ eğitimi içermektedir. Şu an konular için ö
 *   Open CV
 *   BOOST
 *   IoT
+
+#### Kaynaklar
+> Harvey M. Deitel , Paul J. Deitel
+
+> http://www.cplusplus.com/
+
+> https://demirten.gitbooks.io/linux-sistem-programlama/
+
+> 
