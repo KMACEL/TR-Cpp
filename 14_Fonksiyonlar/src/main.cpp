@@ -5,7 +5,7 @@
 // Copyright   : AceL
 // Açıklama    : Fonksiyonlara Başlangıç
 //============================================================================
-#include<iostream>
+#include <iostream>
 #include <typeinfo>
 using namespace std;
 
@@ -39,12 +39,12 @@ Böylece geriye değer döndürmese bile aslında değeri değiştirmiştir.
 */
 void referanssiz(int x)
 {
-    x=5;
+    x = 5;
 }
 
 void referansli(int &y)
 {
-    y=12;
+    y = 12;
 }
 //--------------------------------------------------------
 
@@ -53,7 +53,7 @@ void referansli(int &y)
 Argüman, ilk değerlerdir. Yani siz o değişkene değer vermeseniz bile otomatik
 ilgili değerleri alır.
 */
-void argumanli(int x1=3, int x2=5, int x3=16)
+void argumanli(int x1 = 3, int x2 = 5, int x3 = 16)
 {
     cout << "X1 : " << x1 << endl;
     cout << "X2 : " << x2 << endl;
@@ -101,7 +101,7 @@ fonksiyon yazmak gerekmemektedir. template sayesinde derleyici bizim için ilgil
 foksiyonları otomatik yazacaktır.
 */
 template <typename T>
-void maximum (T deger1) // void yerine T de denebilir
+void maximum(T deger1) // void yerine T de denebilir
 {
     cout << "Gelen Tip : " << typeid(deger1).name() << endl;
 }
@@ -113,17 +113,18 @@ Rekürsif FOnksiyonlar çok tehlikelidir fakat bazı zamanlar hayat kurtarmaktad
 */
 unsigned long faktoriyel(unsigned long fak)
 {
-    if (fak<=1)
+    if (fak <= 1)
     {
         return 1;
-    }else
+    }
+    else
     {
-        return fak*faktoriyel(fak -1);
+        return fak * faktoriyel(fak - 1);
     }
 }
 //--------------------------------------------------------
 
-int main ()
+int main()
 {
     // inline denemesi
     cout << test() << endl;
@@ -146,21 +147,21 @@ int main ()
     cout << "-----------------------------" << endl;
     // Alınan argümana göre değer bilgisi
     argumanli();
-    argumanli(5,4);
-    argumanli(2,3,7);
+    argumanli(5, 4);
+    argumanli(2, 3, 7);
 
     cout << "-----------------------------" << endl;
     // AYnı isimli yerel ve global değişken
     double benMuzurBirDegiskenim = 22.68;
 
-    cout << "İçerideki Değişken Verisi : " << benMuzurBirDegiskenim << endl <<
-            "Dışarıdaki Değişken Verisi : " << ::benMuzurBirDegiskenim << endl;
+    cout << "İçerideki Değişken Verisi : " << benMuzurBirDegiskenim << endl
+         << "Dışarıdaki Değişken Verisi : " << ::benMuzurBirDegiskenim << endl;
 
     cout << "-----------------------------" << endl;
     // Bir fonksiyonu aşırı yükleme
     yukle(15);
     yukle(1.8);
-    yukle(66.7,362);
+    yukle(66.7, 362);
 
     cout << "-----------------------------" << endl;
     // Şablon yapısı

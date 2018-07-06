@@ -5,36 +5,40 @@
 // Copyright   : AceL
 // Açıklama    : Döngülerin Tanıtımı
 //============================================================================
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int main ()
+int main()
 {
-    int sayac=0;
+    int sayac = 0;
     // While Döngüsü
-    while(true){
+    while (true)
+    {
 
-        cout << "Huhuhuuu Sonsuza Kadar Döneceğim"<< endl;
+        cout << "Huhuhuuu Sonsuza Kadar Döneceğim" << endl;
         sayac++;
-        if (sayac ==10){
-            cout << "Tüh Sayacı Unuttum" << endl ;
+        if (sayac == 10)
+        {
+            cout << "Tüh Sayacı Unuttum" << endl;
             break;
         }
     }
 
-    cout << "\n------------------------------------------\n" << endl ;
+    cout << "\n------------------------------------------\n"
+         << endl;
 
     // For Döngüsü
     for (int i = 0; i < 10; ++i)
     {
-        cout << "Bende For Döngüsüyüm" << endl ;
+        cout << "Bende For Döngüsüyüm" << endl;
     }
 
-    cout << "\n------------------------------------------\n" << endl ;
+    cout << "\n------------------------------------------\n"
+         << endl;
     int karakter;
-    while((karakter=cin.get()) != EOF)
+    while ((karakter = cin.get()) != EOF)
     {
-        cout << "Karakter : " << karakter << endl ;
+        cout << "Karakter : " << karakter << endl;
     }
 
     return 0;

@@ -1,10 +1,12 @@
 #ifndef ERROR_H
 #define ERROR_H
 
-class AvanasHata : public exception
+#include <string>
+
+class AvanasHata : public std::exception
 {
-public:
-    string limit()
+  public:
+    std::string limit()
     {
         return "Limit Aşımına Uğradınız. Lütfen Limitler Dahilinde Avans Talebinde Bulununuz";
     }

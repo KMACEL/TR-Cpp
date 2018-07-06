@@ -5,20 +5,19 @@
 // Copyright   : AceL
 // Açıklama    : Değişkenleri anlamak ve kullanmak
 //============================================================================
-#include<iostream>
-#include<string>
+#include <iostream>
+#include <string>
 
 using namespace std;
-int main(){
+int main()
+{
     // Sayısal İfadeler
     int sayisalIfadeler = 285;
     cout << "Sayısal İfade : " << sayisalIfadeler << endl;
 
-
     // Ondalıklı İfadeler
     float ondalikIfadeler = 0.25;
     cout << "Ondalıklı İfade : " << ondalikIfadeler << endl;
-
 
     // Sözel İfadeler
     string sozelIfadeler = "Merhabalar Dünya";
@@ -29,15 +28,15 @@ int main(){
     cout << "Karaktersel İfade : " << karakterselIfadeler << endl;
 
     cout << "-------------------------------------------" << endl;
-    sayisalIfadeler= 172;
-    ondalikIfadeler=286.147;
+    sayisalIfadeler = 172;
+    ondalikIfadeler = 286.147;
     sozelIfadeler = "Nasıl gidiyorr...";
     karakterselIfadeler = 'T';
     //Hepsi
-    cout << "\nSayısal İfaden : " << sayisalIfadeler     << endl <<
-            "Ondalıklı İfadeler : " << ondalikIfadeler     << endl <<
-            "Sözel İfadeler : "     << sozelIfadeler       << endl <<
-            "Karaktersel İfadeler " << karakterselIfadeler << endl ;
+    cout << "\nSayısal İfaden : " << sayisalIfadeler << endl
+         << "Ondalıklı İfadeler : " << ondalikIfadeler << endl
+         << "Sözel İfadeler : " << sozelIfadeler << endl
+         << "Karaktersel İfadeler " << karakterselIfadeler << endl;
 
     return 0;
 }

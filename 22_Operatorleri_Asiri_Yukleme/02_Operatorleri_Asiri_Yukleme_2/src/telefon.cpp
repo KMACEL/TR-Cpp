@@ -1,12 +1,12 @@
-#include<iomanip>
-#include"telefon.h"
+#include <iomanip>
+#include "telefon.h"
 
 using namespace std;
 
 ostream &operator<<(ostream &output, const Telefon &numara)
 {
     output << "(" << numara.alanKodu << ")" << numara.ilkUc << "-"
-        << numara.sonDort;
+           << numara.sonDort;
     return output;
 }
 

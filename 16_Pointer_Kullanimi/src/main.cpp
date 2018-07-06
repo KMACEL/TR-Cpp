@@ -5,17 +5,17 @@
 // Copyright   : AceL
 // Açıklama    : Pointer Anlama
 //============================================================================
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 void kupReferans(int *);
-void diziGoster(const int *,int diziEleman);
+void diziGoster(const int *, int diziEleman);
 
-int main ()
+int main()
 {
-    int sayi=5;
+    int sayi = 5;
     int *ilkPtr = nullptr;
-    ilkPtr=&sayi;
+    ilkPtr = &sayi;
 
     cout << "ilkPtr Değeri : " << ilkPtr << endl;
     cout << "*ilkPtr Değeri : " << *ilkPtr << endl;
@@ -33,23 +33,23 @@ int main ()
 
     cout << "-----------------------------" << endl;
 
-    int dizi[10]={1,3,5,7,9,2,78,1598,78541,12};
+    int dizi[10] = {1, 3, 5, 7, 9, 2, 78, 1598, 78541, 12};
     cout << "Dizi Boyutu : " << sizeof(dizi) / sizeof(dizi[0]) << endl;
-    diziGoster(dizi,sizeof(dizi) / sizeof(dizi[0]));
+    diziGoster(dizi, sizeof(dizi) / sizeof(dizi[0]));
 
     return 0;
 }
 
-void kupReferans (int *kupPtr)
+void kupReferans(int *kupPtr)
 {
-    *kupPtr=*kupPtr * *kupPtr * *kupPtr;
+    *kupPtr = *kupPtr * *kupPtr * *kupPtr;
 }
 
 void diziGoster(const int *diziPtr, int diziEleman)
 {
-    cout << "İkinci Eleman : " << *(diziPtr+1) << endl;
+    cout << "İkinci Eleman : " << *(diziPtr + 1) << endl;
 
-    for(int i=0; i < diziEleman;++i)
+    for (int i = 0; i < diziEleman; ++i)
     {
         cout << *diziPtr++ << endl;
     }

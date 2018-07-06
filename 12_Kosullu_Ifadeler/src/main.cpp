@@ -5,34 +5,42 @@
 // Copyright   : AceL
 // Açıklama    : Koşulsal ifadeleri ve kullanım biçimi
 //============================================================================
-#include<iostream>
+#include <iostream>
 
 using namespace std;
 
-int main (){
+int main()
+{
     int sayi1 = 0;
     int sayi2 = 0;
 
-    cout << "Lütfen ilk sayıyı giriniz : " ;
+    cout << "Lütfen ilk sayıyı giriniz : ";
     cin >> sayi1;
 
-    cout << "Lütfen ikinci sayıyı giriniz : " ;
+    cout << "Lütfen ikinci sayıyı giriniz : ";
     cin >> sayi2;
 
-    if (sayi1 > sayi2){
+    if (sayi1 > sayi2)
+    {
         cout << "İlk girilen sayı, ikincisinden büyük" << endl;
-    } else if (sayi1 < sayi2){
+    }
+    else if (sayi1 < sayi2)
+    {
         cout << "İlk girilen sayı, ikincisinden küçük" << endl;
-    } else if (sayi1 == sayi2){
+    }
+    else if (sayi1 == sayi2)
+    {
         cout << "İlk girilen sayı, ikincisiyle eşit" << endl;
-    } else {
+    }
+    else
+    {
         cout << "Sayı Hatalı" << endl;
     }
 
-    cout << "\n\n---------------------------------------------\n\n" ;
+    cout << "\n\n---------------------------------------------\n\n";
 
     int sayi3 = 0;
-    cout << "Lütfen ilk sayıyı giriniz : " ;
+    cout << "Lütfen ilk sayıyı giriniz : ";
     cin >> sayi3;
 
     switch (sayi3)
@@ -59,7 +67,6 @@ int main (){
         cout << "Sayı 0 ile 5 arasında değil" << endl;
         break;
     }
-
 
     return 0;
 }

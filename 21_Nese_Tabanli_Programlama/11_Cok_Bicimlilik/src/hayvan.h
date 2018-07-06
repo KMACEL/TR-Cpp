@@ -1,17 +1,18 @@
 #ifndef HAYVAN_H
 #define HAYVAN_H
 
-#include<iostream>
-#include<string>
+#include <iostream>
+#include <string>
 
 class Hayvan
 {
-private:
+  private:
     std::string ses;
-public:
+
+  public:
     void setSes(std::string s)
     {
-        ses=s;
+        ses = s;
     }
     std::string getSes()
     {

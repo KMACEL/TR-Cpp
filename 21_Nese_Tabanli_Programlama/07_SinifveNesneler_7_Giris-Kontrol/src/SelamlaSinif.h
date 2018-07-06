@@ -1,12 +1,13 @@
-#include<string>
+#include <string>
 
 class SelamlaSinif
 {
-public:
+  public:
     explicit SelamlaSinif(std::string ilkAtama);
     void setSinifMesaji(std::string setMesaj);
     std::string getSinifMesaji() const;
     void mesajiGoster() const;
-private:
+
+  private:
     std::string sinifMesaji;
 };

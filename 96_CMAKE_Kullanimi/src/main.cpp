@@ -5,9 +5,10 @@
 // Copyright   : AceL
 // Açıklama    : C++'a başlangıç
 //============================================================================
-#include<iostream>
+#include <iostream>
 
-int main(){
+int main()
+{
     std::cout << "Merhaba Dünya";
     return 0;
 }

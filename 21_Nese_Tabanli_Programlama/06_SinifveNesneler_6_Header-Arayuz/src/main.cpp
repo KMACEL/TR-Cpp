@@ -5,8 +5,8 @@
 // Copyright   : AceL
 // Açıklama    : Sınıflar ve Nesneler 6 - Header ve Arayüzler
 //============================================================================
-#include<iostream>
-#include"SelamlaSinif.h"
+#include <iostream>
+#include "SelamlaSinif.h"
 
 using namespace std;
 
@@ -19,6 +19,6 @@ int main()
 
     selamla.setSinifMesaji("Mesaj Değiştir");
 
-    cout << "Yeni Selamlama Mesajı : " << selamla.getSinifMesaji() << endl ;
+    cout << "Yeni Selamlama Mesajı : " << selamla.getSinifMesaji() << endl;
     return 0;
 }

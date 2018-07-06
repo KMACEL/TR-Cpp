@@ -5,16 +5,16 @@
 // Copyright   : AceL
 // Açıklama    :22_Pointer
 //============================================================================
-#include<iostream>
-#include<string>
-#include"hayvan.h"
-#include"kedi.h"
-#include"kopek.h"
+#include <iostream>
+#include <string>
+#include "hayvan.h"
+#include "kedi.h"
+#include "kopek.h"
 using namespace std;
 
 void sesCikar(Hayvan);
 
-int main ()
+int main()
 {
     Kopek kopek;
     kopek.setSes("Hav Hav");

@@ -5,22 +5,21 @@
 // Copyright   : AceL
 // Açıklama    :22_Pointer
 //============================================================================
-#include<iostream>
+#include <iostream>
 //#include"calisan.h"
-#include"muhendis.h"
-#include"error.h"
+#include "muhendis.h"
+#include "error.h"
 using namespace std;
 
-
-int main ()
+int main()
 {
-//    Calisan calisan("Mert", "Acel", "05437819000", "Kocaeli/Gebze", 1250); abstract olduğu çin hata
-//    calisan.getBilgi();
-
+    //    Calisan calisan("Mert", "Acel", "05437819000", "Kocaeli/Gebze", 1250); abstract olduğu çin hata
+    //    calisan.getBilgi();
     Muhendis muhendis("Mert", "Acel", "05437819000", "Kocaeli/Gebze", 1250);
     muhendis.getBilgi();
-    muhendis.zam(200,3);
+    muhendis.zam(200, 3);
     muhendis.getBilgi();
+   
 
     try
     {

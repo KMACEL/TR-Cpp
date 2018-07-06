@@ -5,13 +5,14 @@
 // Copyright   : AceL
 // Açıklama    : Kullanıcı ile etkileşime ilk giriş
 //============================================================================
-#include<iostream>
-#include<string>
+#include <iostream>
+#include <string>
 
 using namespace std;
-int main(){
+int main()
+{
     string sozelVeri;
-    cout << "Lütfen Bir Veri Giriniz : " ;
+    cout << "Lütfen Bir Veri Giriniz : ";
     cin >> sozelVeri;
 
     cout << "Girdiğiniz Veri = " << sozelVeri << endl;

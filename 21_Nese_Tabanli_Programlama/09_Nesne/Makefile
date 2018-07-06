@@ -1,13 +1,15 @@
 CC = g++
-CFLAGS = -O2 -Wall -pedantic
-LIBS = -lm -lnsl src/calisan.cpp
+CFLAGS = -O2 -Wall -Wextra -Werror -std=c++11
+LIBS = src/calisan.cpp
 MAIN = src/main.cpp
 OUT = test
 
-build: $(MAIN)
-	$(CC) $(CFLAGS) $(LIBS) -o $(OUT) $(MAIN)
+all: run
 
-run:
+build: $(MAIN)
+	$(CC) $(CFLAGS) $(LIBS) $(MAIN) -o $(OUT) 
+
+run: build
 	./$(OUT)
 
 clean:

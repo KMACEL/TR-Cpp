@@ -5,23 +5,23 @@
 // Copyright   : AceL
 // Açıklama    : 25_Namespace_Kullanimi
 //============================================================================
-#include<iostream>
-#include<string>
+#include <iostream>
+#include <string>
 using namespace std;
 
-int main ()
+int main()
 {
-    auto l = [] () -> string {return "Merhaba  Dünya";};
+    auto l = []() -> string { return "Merhaba  Dünya"; };
     cout << "Mesaj : " << l() << endl;
 
     cout << "-----------------------------------------" << endl;
 
-    auto l2 = [] () -> void {cout << "Bu da içinde" << endl;};
+    auto l2 = []() -> void { cout << "Bu da içinde" << endl; };
     l2();
 
     cout << "-----------------------------------------" << endl;
     int a = 5;
-    auto l3 = [&a] () -> void {a=2;};
+    auto l3 = [&a]() -> void { a = 2; };
 
     cout << "a : " << a << endl;
     l3();
@@ -29,14 +29,14 @@ int main ()
 
     cout << "-----------------------------------------" << endl;
 
-    auto l4 = [] (int b) -> int {return b * 2;};
+    auto l4 = [](int b) -> int { return b * 2; };
     cout << "2 ile Çarpacak : " << l4(4) << endl;
 
     cout << "-----------------------------------------" << endl;
 
     int b = 3;
     int c = 8;
-    auto l5 = [&] () -> void {b = 4; c = 2;};
+    auto l5 = [&]() -> void {b = 4; c = 2; };
 
     cout << "b : " << b << " c : " << c << endl;
     l5();
@@ -46,16 +46,16 @@ int main ()
 
     int d = 7;
     int e = 12;
-    auto l6 = [=] () -> void {
+    auto l6 = [=]() -> void {
         cout << "d : " << d << " e : " << e << endl;
     };
     l6();
 
     cout << "-----------------------------------------" << endl;
 
-    auto glambda = [](auto a, auto&& b) { return a < b; };
+    auto glambda = [](auto a, auto &&b) { return a < b; };
     bool bKontrol = glambda(7, 8.56);
-    if(bKontrol)
+    if (bKontrol)
     {
         cout << "İlk değer ikincisinden küçük" << endl;
     }
@@ -65,8 +65,7 @@ int main ()
     }
 
     auto vglambda = [](auto printer) {
-        return [=](auto&&... ts)
-        {
+        return [=](auto &&... ts) {
             printer(forward<decltype(ts)>(ts)...);
             return [=] { printer(ts...); };
         };

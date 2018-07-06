@@ -1,18 +1,18 @@
 #ifndef CALISAN_H
 #define CALISAN_H
-#include<iostream>
-#include<string>
+#include <iostream>
+#include <string>
 using namespace std;
 class Calisan
 {
-private:
+  private:
     string isim;
     string soyisim;
     string telefon;
     string adres;
     int maas;
 
-public:
+  public:
     Calisan(string, string, string, string, int);
     ~Calisan();
     void setIsim(string);

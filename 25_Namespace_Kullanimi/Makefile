@@ -1,13 +1,14 @@
 CC = g++
-CFLAGS = -O2 -Wall
-LIBS = -lm
+CFLAGS = -O2 -Wall -Wextra -Werror -std=c++11
 MAIN = src/main.cpp
 OUT = test
+
+all: run
 
 build: $(MAIN)
 	$(CC) $(CFLAGS) $(LIBS) -o $(OUT) $(MAIN)
 
-run:
+run: build
 	./$(OUT)
 
 clean:

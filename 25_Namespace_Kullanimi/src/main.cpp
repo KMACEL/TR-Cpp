@@ -5,54 +5,55 @@
 // Copyright   : AceL
 // Açıklama    : 25_Namespace_Kullanimi
 //============================================================================
-#include<iostream>
-#include<string>
+#include <iostream>
+#include <string>
 using namespace std;
 
 namespace ilk
 {
-    string testVar;
+string testVar;
 
-    void yazdir()
-    {
-        cout << "Bu ilk Namespacetir " << testVar << endl;
-    }
-
-    class TestClass
-    {
-    public:
-        TestClass()
-        {
-            cout << "ilk içinde TestClass oluşutuldu" << endl;
-        }
-    };
+void yazdir()
+{
+    cout << "Bu ilk Namespacetir " << testVar << endl;
 }
+
+class TestClass
+{
+  public:
+    TestClass()
+    {
+        cout << "ilk içinde TestClass oluşutuldu" << endl;
+    }
+};
+} // namespace ilk
 
 namespace ikinci
 {
-    int testVar;
+int testVar;
 
-    void yazdir()
-    {
-        cout << "Bu ikinci Namespacetir " << testVar << endl;
-    }
-
-    class TestClass
-    {
-    public:
-        TestClass()
-        {
-            cout << "ikinci içinde TestClass oluşutuldu" << endl;
-        }
-
-        void mesaj() {
-            /* code */
-            cout << "ikinci mesajjj" << endl;
-        }
-    };
+void yazdir()
+{
+    cout << "Bu ikinci Namespacetir " << testVar << endl;
 }
 
-int main ()
+class TestClass
+{
+  public:
+    TestClass()
+    {
+        cout << "ikinci içinde TestClass oluşutuldu" << endl;
+    }
+
+    void mesaj()
+    {
+        /* code */
+        cout << "ikinci mesajjj" << endl;
+    }
+};
+} // namespace ikinci
+
+int main()
 {
     ilk::testVar = "haha";
     ilk::yazdir();

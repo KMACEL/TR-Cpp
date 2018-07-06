@@ -5,12 +5,12 @@
 // Copyright   : AceL
 // Açıklama    : Set Giris
 //============================================================================
-#include<iostream>
-#include<set>
-#include<string>
+#include <iostream>
+#include <set>
+#include <string>
 using namespace std;
 
-int main ()
+int main()
 {
     set<int> sayilar;
     sayilar.insert(6);
@@ -19,7 +19,7 @@ int main ()
     sayilar.insert(5);
     sayilar.insert(2);
 
-    for(set<int>::iterator it = sayilar.begin(); it != sayilar.end(); it++)
+    for (set<int>::iterator it = sayilar.begin(); it != sayilar.end(); it++)
     {
         cout << "Sayilar : " << *it << endl;
     }
@@ -28,19 +28,17 @@ int main ()
 
     set<int>::iterator itBul = sayilar.find(8);
 
-    if(itBul != sayilar.end())
+    if (itBul != sayilar.end())
     {
         cout << "Bulundu : " << *itBul << endl;
     }
 
-    if(sayilar.count(6))
+    if (sayilar.count(6))
     {
         cout << "Bulundu : " << endl;
     }
 
     cout << "--------------------------------------------------------" << endl;
-
-
 
     return 0;
 }

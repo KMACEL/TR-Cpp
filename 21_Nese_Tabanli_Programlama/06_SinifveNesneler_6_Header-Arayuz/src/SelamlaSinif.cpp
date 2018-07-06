@@ -1,5 +1,5 @@
-#include<iostream>
-#include"SelamlaSinif.h"
+#include <iostream>
+#include "SelamlaSinif.h"
 using namespace std;
 
 // :: sayesinde SelamlaSinif ile bağlantı oluşturmasını sağlar
@@ -9,7 +9,7 @@ SelamlaSinif::SelamlaSinif(string ilkAtama) : sinifMesaji(ilkAtama)
 
 void SelamlaSinif::setSinifMesaji(string setMesaj)
 {
-    sinifMesaji=setMesaj;
+    sinifMesaji = setMesaj;
 }
 
 string SelamlaSinif::getSinifMesaji() const
@@ -19,5 +19,5 @@ string SelamlaSinif::getSinifMesaji() const
 
 void SelamlaSinif::mesajiGoster() const
 {
-    cout << "Sınıf İçi Mesaj : " << sinifMesaji << endl ;
+    cout << "Sınıf İçi Mesaj : " << sinifMesaji << endl;
 }

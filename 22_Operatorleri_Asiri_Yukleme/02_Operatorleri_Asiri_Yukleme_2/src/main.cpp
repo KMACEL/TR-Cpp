@@ -5,12 +5,11 @@
 // Copyright   : AceL
 // Açıklama    :22_Pointer
 //============================================================================
-#include<iostream>
-#include"telefon.h"
+#include <iostream>
+#include "telefon.h"
 using namespace std;
 
-
-int main ()
+int main()
 {
     Telefon tel;
 

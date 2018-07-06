@@ -1,12 +1,13 @@
 CC = g++
-CFLAGS = -O2 -Wall -std=c++11
-LIBS = -lm src/lib/*
+CFLAGS = -O2 -Wall -Wextra -Werror -std=c++11
+LIBS = src/lib/*
 INCLUDES = -Isrc/include
 MAIN = src/main.cpp
 OUT = test
 CLIBS = src/lib
 CINCLUDE = src/include
 
+all: run
 
 build: is
 	$(CC) $(CFLAGS) $(LIBS) $(INCLUDES) -o $(OUT) $(MAIN)
@@ -18,7 +19,7 @@ is: $(CINCLUDE)/*.cpp #src/include/muhendis.cpp src/include/calisan.cpp
 	$(CC) $(CFLAGS) -c $^
 	mv *.o $(CLIBS)
 
-run:
+run: build
 	./$(OUT)
 
 clean:

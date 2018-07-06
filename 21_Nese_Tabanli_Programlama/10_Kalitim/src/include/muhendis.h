@@ -1,18 +1,19 @@
 #ifndef MUHENDIS_H
 #define MUHENDIS_H
 
-#include<iostream>
-#include<string>
-#include"calisan.h"
+#include <iostream>
+#include <string>
+#include "calisan.h"
 
 class Muhendis : public Calisan
 {
-protected:
+  protected:
     int avansVar;
-public:
+
+  public:
     Muhendis(string, string, string, string, int);
     ~Muhendis();
-    void zam(int,int);
+    void zam(int, int);
     int avans(int);
 };
 

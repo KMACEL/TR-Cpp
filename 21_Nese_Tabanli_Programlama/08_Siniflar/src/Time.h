@@ -3,10 +3,10 @@
 
 class Time
 {
-public:
-    explicit Time(int = 0 , int = 0 , int = 0 );
+  public:
+    explicit Time(int = 0, int = 0, int = 0);
     ~Time();
-    void setTime(int = 0,int = 0 ,int = 0);
+    void setTime(int = 0, int = 0, int = 0);
     unsigned int &setHourKOTU(int);
     Time &setHour(int);
     Time &setMinute(int);
@@ -18,7 +18,7 @@ public:
     void printStandart() const;
     static unsigned int getCount();
 
-private:
+  private:
     unsigned int hour;
     unsigned int minute;
     unsigned int second;

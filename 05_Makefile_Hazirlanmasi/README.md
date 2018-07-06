@@ -143,6 +143,10 @@ Hak verirsiniz ki bir çok kütüphane barındıran projelerde, bu şekilde tek 
 
 -Wall = Tüm uyarıları açar
 
+-Wextra =  enables other important warnings 
+
+-Werror = make all warnings into errors, causing compilations to fail if any warnings are reported.
+
 -lm = matematik kütüphanesi
 
 -lz = zip kütüphanesi

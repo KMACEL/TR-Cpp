@@ -5,14 +5,18 @@
 // Copyright   : AceL
 // Açıklama    : Sınıflar ve Nesneler
 //============================================================================
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 class MerhabaClass
 {
-public:
+  private:
+    int a;
+
+  public:
     void merhabaMesaj() const
     {
+        // a =5; Denemez çünkü const ifadesi, class değişkenlerine etki edemez anlamı katıyor
         cout << "Merhaba Class " << endl;
     }
 };

@@ -1,5 +1,5 @@
-#include<iostream>
-#include"SelamlaSinif.h"
+#include <iostream>
+#include "SelamlaSinif.h"
 
 using namespace std;
 
@@ -13,11 +13,12 @@ void SelamlaSinif::setSinifMesaji(string setMesaj)
     if (setMesaj.size() < 10)
     {
         sinifMesaji = setMesaj;
-    }else if (setMesaj.size() >= 10)
+    }
+    else if (setMesaj.size() >= 10)
     {
-        sinifMesaji=setMesaj.substr(0,10);
+        sinifMesaji = setMesaj.substr(0, 10);
         cerr << "Gelen Mesaj : - " << sinifMesaji
-            << " - Sınır olan 10 karakteri aşmakta " << endl;
+             << " - Sınır olan 10 karakteri aşmakta " << endl;
     }
 }
 
@@ -28,5 +29,5 @@ string SelamlaSinif::getSinifMesaji() const
 
 void SelamlaSinif::mesajiGoster() const
 {
-    cout << "Sınıf İçi Mesaj : " << sinifMesaji << endl ;
+    cout << "Sınıf İçi Mesaj : " << sinifMesaji << endl;
 }

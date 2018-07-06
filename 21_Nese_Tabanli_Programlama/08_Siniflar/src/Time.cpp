@@ -1,11 +1,11 @@
-#include<iostream>
-#include<iomanip>
-#include<stdexcept>
+#include <iostream>
+#include <iomanip>
+#include <stdexcept>
 #include "Time.h"
 
 using namespace std;
 
-unsigned int Time::classCount=0;
+unsigned int Time::classCount = 0;
 
 Time::Time(int h, int m, int s)
 {
@@ -28,10 +28,11 @@ void Time::setTime(int h, int m, int s)
 
 Time &Time::setHour(int hour)
 {
-    if(hour >= 0 && hour < 24)
+    if (hour >= 0 && hour < 24)
     {
-        this->hour=hour; //this
-    }else
+        this->hour = hour; //this
+    }
+    else
     {
         throw invalid_argument("Lütfen Saat verisini 0 ile 24 arasında değer giriniz...");
     }
@@ -40,23 +41,24 @@ Time &Time::setHour(int hour)
 
 unsigned int &Time::setHourKOTU(int h)
 {
-    if(h >= 0 && h < 24)
+    if (h >= 0 && h < 24)
     {
-        hour=h;
-    }else
+        hour = h;
+    }
+    else
     {
         throw invalid_argument("Lütfen Saat verisini 0 ile 24 arasında değer giriniz...");
     }
     return hour;
 }
 
-
 Time &Time::setMinute(int m)
 {
-    if(m >= 0 && m < 60)
+    if (m >= 0 && m < 60)
     {
-        minute=m;
-    }else
+        minute = m;
+    }
+    else
     {
         throw invalid_argument("Lütfen dakika verisini 0 ile 60 arasında değer giriniz...");
     }
@@ -65,10 +67,11 @@ Time &Time::setMinute(int m)
 
 Time &Time::setSecond(int s)
 {
-    if(s >= 0 && s < 60)
+    if (s >= 0 && s < 60)
     {
-        second=s;
-    }else
+        second = s;
+    }
+    else
     {
         throw invalid_argument("Lütfen saniye verisini 0 ile 60 arasında değer giriniz...");
     }
@@ -98,7 +101,7 @@ void Time::printUniversal()
 void Time::printStandart() const
 {
     cout << setfill('0') << setw(2) << ((hour == 0 || hour == 12) ? 12 : hour % 12)
-    << ":"  << setw(2) <<second << (hour < 12 ? " AM" : " PM") << endl;
+         << ":" << setw(2) << second << (hour < 12 ? " AM" : " PM") << endl;
 }
 
 unsigned int Time::getCount()

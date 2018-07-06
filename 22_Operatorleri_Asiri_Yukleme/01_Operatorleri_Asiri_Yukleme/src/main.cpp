@@ -5,18 +5,18 @@
 // Copyright   : AceL
 // Açıklama    : 01_Operatorleri_Asiri_Yukleme
 //============================================================================
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 class Asiri
 {
-public:
-    int toplam,deger;
+  public:
+    int toplam, deger;
 
     Asiri operator+(const Asiri &test)
     {
         Asiri asiri;
-        asiri.toplam= test.deger*3;
+        asiri.toplam = test.deger * 3;
         return asiri;
     }
 
@@ -24,15 +24,14 @@ public:
     {
         cout << "Deger : " << a.toplam << "  :  " << a.deger << endl;
     }
-
 };
 
-int main ()
+int main()
 {
     Asiri a;
-    a.deger=5;
+    a.deger = 5;
 
-    a=a+a;
+    a = a + a;
     a.yaz(a);
 
     return 0;

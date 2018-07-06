@@ -5,9 +5,9 @@
 // Copyright   : AceL
 // Açıklama    : Sınıflar ve Nesneler 5 - Header
 //============================================================================
-#include<iostream>
-#include"SelamlaSinif.h"
-using  namespace std;
+#include <iostream>
+#include "SelamlaSinif.h"
+using namespace std;
 int main()
 {
     SelamlaSinif selamla("Merhaba Header");
@@ -15,6 +15,6 @@ int main()
 
     selamla.setSinifMesaji("Mesaj Değiştir");
 
-    cout << "Yeni Selamlama Mesajı : " << selamla.getSinifMesaji() << endl ;
+    cout << "Yeni Selamlama Mesajı : " << selamla.getSinifMesaji() << endl;
     return 0;
 }

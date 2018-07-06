@@ -5,13 +5,12 @@
 // Copyright   : AceL
 // Açıklama    :22_Pointer
 //============================================================================
-#include<iostream>
-#include"calisan.h"
+#include <iostream>
+#include "calisan.h"
 using namespace std;
 
-
-int main ()
+int main()
 {
-    
+
     return 0;
 }

@@ -5,19 +5,19 @@
 // Copyright   : AceL
 // Açıklama    : 25_Namespace_Kullanimi
 //============================================================================
-#include<iostream>
-#include<string>
-#include<thread>
-#include<chrono>
+#include <iostream>
+#include <string>
+#include <thread>
+#include <chrono>
 using namespace std;
 
 void islem(string mesaj, int zaman)
 {
-    std::this_thread::sleep_for (std::chrono::seconds(zaman));
+    std::this_thread::sleep_for(std::chrono::seconds(zaman));
     cout << "Mesajınız : " << mesaj << endl;
 }
 
-int main ()
+int main()
 {
     cout << "Main Thread ID : " << this_thread::get_id() << endl;
 

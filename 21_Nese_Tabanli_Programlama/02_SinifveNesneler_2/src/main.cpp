@@ -5,25 +5,26 @@
 // Copyright   : AceL
 // Açıklama    : Sınıflar ve Nesneler 2
 //============================================================================
-#include<iostream>
-#include<string>
+#include <iostream>
+#include <string>
 using namespace std;
 
 class VeriAlanClass
 {
-public:
+  public:
     void mesajliFunction(string gelenVeri) const
     {
         cout << "Class'a gelen veri : " << gelenVeri << endl;
     }
 };
 
-int main(){
+int main()
+{
     string mesajGonderme;
     VeriAlanClass veriAlanClassDegisken;
 
-    cout << "Mesaj giriniz : " ;
-    getline(cin,mesajGonderme);
+    cout << "Mesaj giriniz : ";
+    getline(cin, mesajGonderme);
     cout << endl;
 
     veriAlanClassDegisken.mesajliFunction(mesajGonderme);
