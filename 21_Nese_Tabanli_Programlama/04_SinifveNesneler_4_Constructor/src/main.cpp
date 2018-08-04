@@ -11,6 +11,9 @@ using namespace std;
 
 class IlkDegerli
 {
+  private:
+    string sinifMesaji;
+
   public:
     explicit IlkDegerli(string ilkAtama) : sinifMesaji(ilkAtama)
     {
@@ -30,10 +33,11 @@ class IlkDegerli
     {
         cout << "Sınıf İçi Mesaj : " << sinifMesaji << endl;
     }
-
-  private:
-    string sinifMesaji;
 };
+
+void test (IlkDegerli i){
+    i.mesajiGoster();
+}
 
 int main()
 {
@@ -52,5 +56,7 @@ int main()
 
     cout << "Sınıf Mesajını Göster : " << ilkDegerliSinif.getSinifMesaji() << endl;
 
+test(ilkDegerliSinif);
+test((IlkDegerli)"mehaba");
     return 0;
 }

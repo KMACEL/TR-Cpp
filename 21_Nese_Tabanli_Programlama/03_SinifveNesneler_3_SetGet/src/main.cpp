@@ -11,13 +11,16 @@ using namespace std;
 
 class GetSetli
 {
+  private:
+    string gelenMesaj;
+
   public:
     void setMesaj(string mesaj)
     {
         gelenMesaj = mesaj;
     }
 
-    string getMesaj()
+    string getMesaj() const
     {
         return gelenMesaj;
     }
@@ -26,9 +29,6 @@ class GetSetli
     {
         cout << "Senin Mesajın : " << gelenMesaj << endl;
     }
-
-  private:
-    string gelenMesaj;
 };
 
 int main()
