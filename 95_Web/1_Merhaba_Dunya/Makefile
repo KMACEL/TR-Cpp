@@ -4,10 +4,11 @@ LIBS = -lm -lcgicc
 MAIN = src/main.cpp
 OUT = test
 
+all: run
 build: $(MAIN)
 	$(CC) $(CFLAGS) $(LIBS) -o $(OUT) $(MAIN)
 
-run:
+run: build
 	./$(OUT)
 
 clean:
@@ -15,5 +16,8 @@ clean:
 
 install: $(OUT)
 	cp $(OUT) /usr/bin
+
+lib:
+	sudo apt-get install libcgicc5-dev libcgicc-doc
 
 .PHONY: clean
