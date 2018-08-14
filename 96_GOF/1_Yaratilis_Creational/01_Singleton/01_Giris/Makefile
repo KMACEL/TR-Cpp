@@ -1,13 +1,14 @@
 CC = g++
 CFLAGS = -O2 -Wall -Wextra -Werror -std=c++11
-LIBS = -lm
+LIBS = src/Mesaj.cpp
 MAIN = src/main.cpp
 OUT = test
+all: run
 
 build: $(MAIN)
-	$(CC) $(CFLAGS) $(LIBS) -o $(OUT) $(MAIN) src/Mesaj.h
+	$(CC) $(CFLAGS) $(LIBS) $(MAIN) -o $(OUT) 
 
-run:
+run: build
 	./$(OUT)
 
 clean:

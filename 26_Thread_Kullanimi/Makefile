@@ -18,4 +18,7 @@ clean:
 install: $(OUT)
 	cp $(OUT) /usr/bin
 
+lib:
+	sudo apt-get install libpthread-stubs0-dev
+
 .PHONY: clean

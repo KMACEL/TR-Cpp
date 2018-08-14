@@ -5,20 +5,22 @@
 // Copyright   : AceL
 // Açıklama    :22_Pointer
 //============================================================================
-#include<iostream>
-#include<string>
-#include"Mesaj.h"
+#include <iostream>
+#include <string>
+#include "Mesaj.h"
 
 using namespace std;
 
-
-int main ()
+int main()
 {
-//  Mesaj *m1=Mesaj::getInstance();
+  // 1. Kullanış Biçimi
+  Mesaj *m1 = Mesaj::getInstance();
+  m1->setMesaj("Test");
+  m1->mesajYazir();
+
+  // 2. Kullanış Biçimi
   Mesaj::getInstance()->setMesaj("Merhaba");
   Mesaj::getInstance()->mesajYazir();
-  //m1->setMesaj("Test");
-  //m1->mesajYazir();
 
   return 0;
 }

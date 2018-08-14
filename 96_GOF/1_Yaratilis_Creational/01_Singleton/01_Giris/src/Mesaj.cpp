@@ -1,12 +1,13 @@
-#include<iostream>
-#include"Mesaj.h"
+#include <iostream>
+#include "Mesaj.h"
 
-Mesaj* Mesaj::INSTANCE=0;
+Mesaj *Mesaj::INSTANCE = 0;
 
-Mesaj* Mesaj::getInstance()
+Mesaj *Mesaj::getInstance()
 {
-  if (INSTANCE==0) {
-    INSTANCE=new Mesaj();
+  if (INSTANCE == 0)
+  {
+    INSTANCE = new Mesaj();
   }
   return INSTANCE;
 }
