@@ -23,37 +23,73 @@ Bu proje, açıklamalarıyla C++ eğitimi içermektedir. Şu an konular için ö
 * ✔ Koşullu İfadeler (If - Else & Switch Case)
 * ✔ Döngüler
 * ✔ Fonksiyonlar
-*   Diziler
-*   Pointer_Kullanımı
-*   Vector Kullanımı
-*   List Kullanımı
-*   Map Kullanımı
-*   Set Kullanımı
-*   Nesne Tabanlı Programlama
-*   Stack Kullanımı
-*   Queue Kullanımı
-*   "namespace" Kullanımı
-*   Hata Denetimi
-*   Şablonlar
-*   Standart Kütüphaneler
-*   Dosya İşlemleri
-*   Thread Kullanımı
-*   Web Service
-*   Veri Tabanı
-*   Algoritmalar
-*   Data Structures
-*   Design Pattern
-*   Open CV
-*   BOOST
-*   IoT
+* X  Diziler
+* X  Pointer_Kullanımı
+* X  Vector Kullanımı
+* X  List Kullanımı
+* X  Map Kullanımı
+* X  Set Kullanımı
+* X  Nesne Tabanlı Programlama
+* X  Stack Kullanımı
+* X  Queue Kullanımı
+* X  "namespace" Kullanımı
+* X  Hata Denetimi
+* X  Şablonlar
+* X  Standart Kütüphaneler
+* X  Dosya İşlemleri
+* X  Thread Kullanımı
+* X  Web Service
+* X  Veri Tabanı
+* X  Algoritmalar
+* X  Data Structures
+* \--   Design Pattern
+* X  Open CV
+* X  BOOST
+* X  IoT
 
 #### Kaynaklar
 > Harvey M. Deitel , Paul J. Deitel
 
-> http://www.cplusplus.com/
+> Modern C++ Design: Generic Programming and Design Patterns Applied : Andrei Alexandrescu
 
-> https://demirten.gitbooks.io/linux-sistem-programlama/
+> Dmytro Radchuk - Boost.Asio C++ Network Programming Cookbook
+
+> Boost.Asio C++ Network Programming
+
+> Anthony Williams-C++ Concurrency in Action_ Practical Multithreading-Manning
+
+> Bjarne Stroustrup-The C++ Programming Language-Addison-Wesley 
+
+#### Web
+
+> http://www.cplusplus.com
+
+> https://en.cppreference.com
+
+> https://demirten.gitbooks.io/linux-sistem-programlama
 
 > https://www.boost.org/doc/libs/1_67_0/more/getting_started/unix-variants.html
 
 > https://www.boost.org/doc/libs/1_55_0/doc/html/boost_asio/examples/cpp11_examples.html
+
+> https://sourcemaking.com
+
+> https://www.codeproject.com
+
+> http://www.bogotobogo.com
+
+> https://www.geeksforgeeks.org
+
+> https://solarianprogrammer.com
+
+> http://www.drdobbs.com
+
+#### Video
+
+> https://www.udemy.com/free-learn-c-tutorial-beginners (Ücretsiz)
+
+> https://www.udemy.com/learn-advanced-c-programming
+
+> https://www.udemy.com/nesne-yonelimli-programlama-cpp
+
+> https://www.udemy.com/patterns-cplusplus
