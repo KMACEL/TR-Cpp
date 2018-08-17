@@ -1,5 +1,5 @@
 #include <iostream>
-#include <mutex>    
+#include <mutex>
 #include "Mesaj.h"
 
 Mesaj *Mesaj::INSTANCE = 0;
@@ -7,12 +7,15 @@ std::mutex mtx;
 
 Mesaj *Mesaj::getInstance()
 {
-  mtx.lock();
-  if (INSTANCE == 0)
+  if (INSTANCE == 0) // Eğer çift kontrollü olursa daha güvenli olduğu gözlemlenmiştir http://www.drdobbs.com/cpp/c-and-the-perils-of-double-checked-locki/184405726
   {
-    INSTANCE = new Mesaj();
+    mtx.lock();
+    if (INSTANCE == 0)
+    {
+      INSTANCE = new Mesaj();
+    }
+    mtx.unlock();
   }
-  mtx.unlock();
   return INSTANCE;
 }
 
