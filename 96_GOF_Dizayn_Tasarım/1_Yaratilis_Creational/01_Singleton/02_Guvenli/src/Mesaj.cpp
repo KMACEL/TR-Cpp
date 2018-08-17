@@ -1,22 +1,17 @@
 #include <iostream>
-#include <mutex>    
 #include "Mesaj.h"
 
-Mesaj *Mesaj::INSTANCE = 0;
-std::mutex mtx;
-
-Mesaj *Mesaj::getInstance()
+Mesaj &Mesaj::getInstance()
 {
-  mtx.lock();
-  if (INSTANCE == 0)
-  {
-    INSTANCE = new Mesaj();
-  }
-  mtx.unlock();
+  static Mesaj INSTANCE; // Yok edilmesi garanti
   return INSTANCE;
 }
 
 Mesaj::Mesaj()
+{
+}
+
+Mesaj::~Mesaj()
 {
 }
 
