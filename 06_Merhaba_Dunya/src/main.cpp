@@ -10,5 +10,5 @@
 int main()
 {
     std::cout << "Merhaba Dünya";
-    return 0;
+    return 0 ; // 0 yerine EXIT_SUCCESS yazılabilir 
 }

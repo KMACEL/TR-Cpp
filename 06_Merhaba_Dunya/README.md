@@ -53,6 +53,9 @@ Süslü parantez, aidiyet belirtmektedir. Yani, **"main"**den sonra gelen **"{"*
 
 **Dikkat** edilmesi gereken önemli bir durum vardır. Siz eğer sözel yani karaktersel bir ifade yazdıracaksanız bunu **-"..."-** **çift tırnak** içinde yazdırmanız gerekmektedir.
 
+### 6. return 0;
+**return** **Türkçede** geri dönüş anlamına gelmektedir. Fonksiyonlar kısmında detaylıca inceleyeceğimiz bir komut. Fakat burada basitçe söylemek gerekirse 0 değerini geri döndür anlamına gelmektedir. Bu da programın sorunsuz bir şekilde tamamlandığını belirtmektedir. 0 yerine **"EXIT_SUCCESS"** ifadesi de yazılabilir.
+
 #### Not :
 Merak etmeyin. Her program satırını tek tek bu şekilde inceleyemeyeceğiz :) Bu programlamaya girmek adına önemli bir adım olduğu için olabildiğince açıklamak istedim.
 

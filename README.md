@@ -60,6 +60,7 @@ Bu proje, açıklamalarıyla C++ eğitimi içermektedir. Şu an konular için ö
 
 > Bjarne Stroustrup-The C++ Programming Language-Addison-Wesley 
 
+
 #### Web
 
 > http://www.cplusplus.com
@@ -83,6 +84,8 @@ Bu proje, açıklamalarıyla C++ eğitimi içermektedir. Şu an konular için ö
 > https://solarianprogrammer.com
 
 > http://www.drdobbs.com
+
+> https://goalkicker.com/CPlusPlusBook/
 
 #### Video
 
