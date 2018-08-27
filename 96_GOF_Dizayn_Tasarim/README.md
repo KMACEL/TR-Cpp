@@ -7,13 +7,12 @@
 Yaratılış kalıpları, nesneleri doğrudan oluşturmanıza değil, sizin için nesneler yaratan kalıplardır. Bu, belirli bir durum için hangi nesnelerin yaratılması gerektiğine karar vermede programınıza daha fazla esneklik sağlar.
 
 * **Singleton** pattern,  bir sınıf için sadece bir nesne oluşturmayı sağlar.
+* **Factory method**  pattern creates objects without specifying the exact class to create.
 * **Abstract factory**  pattern groups object factories that have a common theme.
 * **Builder** pattern constructs complex objects by separating construction and representation.
-* **Factory method**  pattern creates objects without specifying the exact class to create.
 * **Prototype** pattern creates objects by cloning an existing object.
 
 ## **Structural**
-
 These concern class and object composition. They use inheritance to compose interfaces and define ways to compose objects to obtain new functionality.
 
 * **Adapter** allows classes with incompatible interfaces to work together by wrapping its own interface around that of an already existing class.

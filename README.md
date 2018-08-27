@@ -96,3 +96,5 @@ Bu proje, açıklamalarıyla C++ eğitimi içermektedir. Şu an konular için ö
 > https://www.udemy.com/nesne-yonelimli-programlama-cpp
 
 > https://www.udemy.com/patterns-cplusplus
+
+> https://www.youtube.com/channel/UCs6sf4iRhhE875T1QjG3wPQ
