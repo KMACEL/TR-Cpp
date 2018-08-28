@@ -87,6 +87,8 @@ Bu proje, açıklamalarıyla C++ eğitimi içermektedir. Şu an konular için ö
 
 > https://goalkicker.com/CPlusPlusBook/
 
+> http://bilgisayarkavramlari.sadievrenseker.com
+
 #### Video
 
 > https://www.udemy.com/free-learn-c-tutorial-beginners (Ücretsiz)

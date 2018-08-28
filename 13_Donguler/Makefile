@@ -8,7 +8,7 @@ all: run
 build: $(MAIN)
 	$(CC) $(CFLAGS) $(MAIN) -o $(OUT)
 
-run:
+run: build
 	./$(OUT)
 
 clean:

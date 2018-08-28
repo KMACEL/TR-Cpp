@@ -35,6 +35,23 @@ int main()
 
     cout << "\n------------------------------------------\n"
          << endl;
+
+    volatile int sonsuz = 0;
+    int sayac2 = 0;
+    while (sonsuz == 0)
+    {
+        sayac2++;
+        cout << "Sonsuza kadar dönencek. Gerçekten !" << endl;
+
+        if (sayac2 == 10)
+        {
+            cout << "Yine sayacı unutu vermişim :( " << endl;
+            sonsuz++;
+        }
+    }
+
+    cout << "\n------------------------------------------\n"
+         << endl;
     int karakter;
     while ((karakter = cin.get()) != EOF)
     {

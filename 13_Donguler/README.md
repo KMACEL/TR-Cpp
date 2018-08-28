@@ -27,3 +27,6 @@ for(değişken=başlangıç değeri; koşul ; sayaç)
 ```
 
 Kullanım şablonu yukarıdaki gibidir. "for"'un "while"'dan en büyük farkı, ilk satırda gerekli bilgileri veriyor olmasıdır
+
+#### "Volotile" Deyimi
+Bu veri tipini kullanmazsak derleyici, değişkeni optimize ederek, işlevini bizim istediğimiz durum dışına çıkarabilir. Bu ifade  derleyiciye, bu değişkeni optimize etme demektedir. Örneğin sonsuz bir döngüde kullanılan değişkeni, derleyici anlayıp bize hata döndürebilir yada hiç döngüye girmeye bilir. Yada farklı "process"ler tarafından değiştiriliyorsa istemediğimiz sonuçlar çıkarabilir. Bu sebepten **"volatile"** kullanmamız önemlidir.
