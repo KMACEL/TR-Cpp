@@ -89,6 +89,15 @@ Bu proje, açıklamalarıyla C++ eğitimi içermektedir. Şu an konular için ö
 
 > http://bilgisayarkavramlari.sadievrenseker.com
 
+> https://cmake.org/cmake-tutorial/
+
+> http://www.yazilimperver.com/index.php/2018/08/28/merhaba-cmake/
+
+> https://www.johnlamp.net/cmake-tutorial-1-getting-started.html
+
+> https://gitlab.kitware.com/cmake/community/wikis/doc/cmake/Examples
+
+
 #### Video
 
 > https://www.udemy.com/free-learn-c-tutorial-beginners (Ücretsiz)

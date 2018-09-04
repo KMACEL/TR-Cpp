@@ -6,9 +6,14 @@
 // Açıklama    : C++'a başlangıç
 //============================================================================
 #include <iostream>
+ 
+#ifndef CMAKETEST
+    #define CMAKETEST "Sistem Bildirilmedi"
+#endif
 
 int main()
 {
-    std::cout << "Merhaba Dünya";
+    
+    std::cout << "Merhaba Dünya " << CMAKETEST << std::endl;
     return 0;
 }

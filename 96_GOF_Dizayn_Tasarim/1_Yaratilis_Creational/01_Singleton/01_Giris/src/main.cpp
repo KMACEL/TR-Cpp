@@ -1,9 +1,9 @@
 //============================================================================
-// İsim        : 23_Stack
+// İsim        : 01_Singleton
 // Yazan       : Mert AceL
 // Version     : 1.0
 // Copyright   : AceL
-// Açıklama    :22_Pointer
+// Açıklama    : 01_Singleton
 //============================================================================
 #include <iostream>
 #include <string>

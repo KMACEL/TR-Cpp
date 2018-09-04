@@ -1,3 +1,0 @@
-/home/mert.acel/MA/TR-Cpp/96_CMAKE_Kullanimi/CMakeFiles/edit_cache.dir
-/home/mert.acel/MA/TR-Cpp/96_CMAKE_Kullanimi/CMakeFiles/rebuild_cache.dir
-/home/mert.acel/MA/TR-Cpp/96_CMAKE_Kullanimi/CMakeFiles/hello.dir
