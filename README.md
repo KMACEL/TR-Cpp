@@ -39,6 +39,10 @@ Bu proje, açıklamalarıyla C++ eğitimi içermektedir. Şu an konular için ö
 * X  Dosya İşlemleri
 * X  Thread Kullanımı
 * X  Web Service
+* X  uWebSockets
+* X  Boost Beast
+* X  Boost Asio
+* X  IncludeOS
 * X  Veri Tabanı
 * X  Algoritmalar
 * X  Data Structures
@@ -46,6 +50,7 @@ Bu proje, açıklamalarıyla C++ eğitimi içermektedir. Şu an konular için ö
 * X  Open CV
 * X  BOOST
 * X  IoT
+
 
 #### Kaynaklar
 > Harvey M. Deitel , Paul J. Deitel
