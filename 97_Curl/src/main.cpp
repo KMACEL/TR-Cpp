@@ -6,9 +6,22 @@
 // Açıklama    : 25_Namespace_Kullanimi
 //============================================================================
 #include <iostream>
+#include <string>
+
 #include <curl/curl.h>
 
 using namespace std;
+
+string Decode(const string &encoded)
+{
+    CURL *curl = curl_easy_init();
+    int outlength;
+    char *cres = curl_easy_unescape(curl, encoded.c_str(), encoded.length(), &outlength);
+    string res(cres, cres + outlength);
+    curl_free(cres);
+    curl_easy_cleanup(curl);
+    return res;
+}
 
 int main()
 {
@@ -20,7 +33,8 @@ int main()
 
   /* get a curl handle */
   curl = curl_easy_init();
-  if(curl) {
+  if (curl)
+  {
     /* First set the URL that is about to receive our POST. This URL can
        just as well be a https:// URL if that is what should receive the
        data. */
@@ -31,7 +45,7 @@ int main()
     /* Perform the request, res will get the return code */
     res = curl_easy_perform(curl);
     /* Check for errors */
-    if(res != CURLE_OK)
+    if (res != CURLE_OK)
       fprintf(stderr, "curl_easy_perform() failed: %s\n",
               curl_easy_strerror(res));
 
@@ -39,5 +53,9 @@ int main()
     curl_easy_cleanup(curl);
   }
   curl_global_cleanup();
+
+
+  cout << Decode("http://api.eve-central.com/api/quicklook?id=867377020905216&time=2018-11-07T00%3A57%3A48Z&counter=1158304&connType=15&dataState=2&signalDb=-91&J=0&W=0&T=2018-11-07%3A00:57:49&PN=0&ACC=0") << endl;
   return 0;
 }
+

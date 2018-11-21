@@ -56,5 +56,25 @@ int main()
     sozel.at(2) = 'Q';
     cout << "at Tan sonra : " << sozel << endl;
 
+    /*
+    #include <sstream>
+
+    std::string text = "Let me,split this into words";
+    std::istringstream iss2(text);
+    std::vector<std::string> results((istream_iterator<string>(iss2)),
+                                     istream_iterator<string>());
+*/
     return 0;
 }
+
+/*
+#include <regex>
+
+vector<string> parseString(string getString, string getRegex)
+{
+    regex regex(getRegex);
+    return {
+        sregex_token_iterator(getString.begin(), getString.end(), regex, -1),
+        sregex_token_iterator()};
+}
+*/
