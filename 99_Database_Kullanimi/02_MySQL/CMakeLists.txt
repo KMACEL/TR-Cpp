@@ -19,16 +19,10 @@ message(STATUS "PROJECT_NAME         : ${PROJECT_NAME}")
 message(STATUS "CMAKE_SOURCE_DIR     : ${CMAKE_SOURCE_DIR}")
 message(STATUS "CMAKE_SYSTEM         : ${CMAKE_SYSTEM}")
 
-# Include Folders
-include_directories(${MYSQL_PATH}/include)
-
-# Library Path
-link_directories(${MYSQL_PATH}/lib64)
-
 find_package(OpenSSL)
 
 set(SOURCE_FILES src/main.cpp )
 
-add_executable(${PROJECT_NAME} ${SOURCE_FILES}  )
+add_executable(${PROJECT_NAME} ${SOURCE_FILES})
 
-target_link_libraries(${PROJECT_NAME}  crypto ssl pthread openssl mysqlcppconn8)
+target_link_libraries(${PROJECT_NAME}   mysqlcppconn)
