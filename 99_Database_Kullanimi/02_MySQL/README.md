@@ -3,11 +3,17 @@
 ### MySQL Yükleme
 
 ```bash
+wget -c https://dev.mysql.com/get/mysql-apt-config_0.8.10-1_all.deb 
+sudo dpkg -i mysql-apt-config_0.8.10-1_all.deb 
+sudo apt update
 sudo apt-get install mysql-server
-sudo apt install mysql-client
+sudo mysql_secure_installation
+sudo systemctl status mysql
+sudo systemctl enable mysql
+sudo apt-get install mysql-workbench-community libmysqlclient21
 ```
 
-### Drive YÜkleme
+### Drive Yükleme
 
 #### 1. Yöntem
 
@@ -28,7 +34,11 @@ sudo cmake --build . --target install --config CCC
 
 ```
 
-sudo mysql_ssl_rsa_setup --uid=mysql
+#### En Kolay Yöntem
+
+```cpp
+sudo apt-get install  libmysqlcppconn-dev
+```
 
 
 # Kaynak
@@ -43,3 +53,7 @@ sudo mysql_ssl_rsa_setup --uid=mysql
 > https://dev.mysql.com/doc/dev/connector-cpp/8.0/building.html
 
 > https://www.digitalocean.com/community/tutorials/how-to-configure-ssl-tls-for-mysql-on-ubuntu-16-04
+
+> https://www.tecmint.com/install-mysql-8-in-ubuntu/
+
+> https://dev.mysql.com/doc/connector-cpp/1.1/en/connector-cpp-examples-complete-example-2.html
